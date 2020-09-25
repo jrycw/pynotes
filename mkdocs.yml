@@ -1,0 +1,118 @@
+# Project information
+site_name: PyNotes_site_name
+site_url: https://jrycw.github.io/pynotes
+site_author: Jerry Wu
+site_description: >-
+  This repo collects the notes while learning Python
+
+# Repository
+repo_name: jrycw/pynotes
+repo_url: https://github.com/jrycw/pynotes
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2020 - 2020 Jerry Wu
+
+# Configuration
+theme:
+  name: material
+
+  icon:
+    repo: fontawesome/brands/git-square
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    - tabs
+
+  palette:
+    primary: deep purple
+    # scheme: slate
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# Plugins
+plugins:
+  - search
+  # - redirects:
+  #     redirect_maps:
+  #       extensions/admonition.md: reference/admonitions.md
+  - minify:
+      minify_html: true
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jrycw
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/yichengwu/
+    - icon: fontawesome/solid/envelope
+      link: mailto:jerry@ycwu.space
+
+# Extensions
+markdown_extensions:
+  - toc:
+      permalink: true
+  - markdown.extensions.admonition
+  - markdown.extensions.abbr
+  - markdown.extensions.attr_list
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true
+      linenums_style: pymdownx.inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: jrycw
+      repo: pynotes
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: 'https://jrycw.github.io'
+  - PyNotes: 
+    - 00-Scope: index.md
+    - 01-Warm up: pynotes01-warm-up.md
+
+# Google Analytics
+google_analytics:
+  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  - auto
