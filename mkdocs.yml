@@ -1,10 +1,10 @@
 # Project information
-site_name: PyNotes_site_name
+site_name: PyNotes
 site_url: https://jrycw.github.io/pynotes
 site_author: Jerry Wu
 site_description: >-
-  This repo collects the notes while learning Python
-
+  This repo collects my notes while learning Python.
+ 
 # Repository
 repo_name: jrycw/pynotes
 repo_url: https://github.com/jrycw/pynotes
@@ -44,9 +44,6 @@ theme:
 # Plugins
 plugins:
   - search
-  # - redirects:
-  #     redirect_maps:
-  #       extensions/admonition.md: reference/admonitions.md
   - minify:
       minify_html: true
 
@@ -83,7 +80,7 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight:
-      linenums: true
+      linenums: True
       linenums_style: pymdownx.inline
   - pymdownx.inlinehilite
   - pymdownx.keys
@@ -109,10 +106,11 @@ markdown_extensions:
 nav:
   - Home: 'https://jrycw.github.io'
   - PyNotes: 
-    - 00-Scope: index.md
+    - Scope: index.md
     - 01-Warm up: pynotes01-warm-up.md
+    - 02-List comprehension syntax: pynotes02-list-comprehension-syntax.md 
 
 # Google Analytics
 google_analytics:
-  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  - UA-179082443-2
   - auto
