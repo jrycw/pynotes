@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://jrycw.github.io/pynotes/</loc>
-     <lastmod>2020-09-26</lastmod>
+     <lastmod>2020-09-28</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://jrycw.github.io/pynotes/pynotes01-warm-up/</loc>
-     <lastmod>2020-09-26</lastmod>
+     <lastmod>2020-09-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://jrycw.github.io/pynotes/pynotes02-list-comprehension-syntax/</loc>
+     <lastmod>2020-09-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
